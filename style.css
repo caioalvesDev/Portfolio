@@ -1,0 +1,68 @@
+.navbar{
+    margin-bottom: 40px;
+}
+
+.card{
+    margin-bottom: 20px;
+}
+
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .5);
+}
+
+dialog {
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    width: 50%;
+    text-align: center;
+    /* animation: fadeIn .5s ease-in-out; */
+    opacity: 1;
+    animation: fadeinout .8s linear 1 forwards;
+}
+
+dialog > p {
+    font-family: monospace;
+    border-right: 4px solid;
+    display: inline-block;
+    width: 23ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(23), blinking 0.5s infinite step-end alternate;
+}
+.media > .media-content > p {
+    border-right: 4px solid;
+    display: block;
+    width: 13ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13), blinking 0.5s infinite step-end alternate;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* dialog.fade {
+    opacity: 1;
+    transition: opacity .3s ease;
+} */
+
+
+@keyframes fadeinout {
+    /* 0%,100% { opacity: 0 }
+    50% { opacity: 1 } */
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
