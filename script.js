@@ -22,7 +22,6 @@ if (local_Storage()) {
     
 }
 
-
 const devTitle = '< Full-Stack />'.toUpperCase();
 const devtitleAlt = '< Caio Alves />'.toUpperCase();
 let trigger = false;
