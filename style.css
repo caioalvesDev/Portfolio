@@ -38,6 +38,7 @@ dialog > p {
     overflow: hidden;
     animation: typing 2s steps(13), blinking 0.5s infinite step-end alternate;
 }
+
 @keyframes typing {
     from {
         width: 0;
